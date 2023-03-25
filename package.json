@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "node-fetch": "^2.6.6",
+    "selenium-webdriver": "^4.8.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "analyze-my-youtube",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jrichards1024/analyze-my-youtube.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jrichards1024/analyze-my-youtube/issues"
+  },
+  "homepage": "https://github.com/Jrichards1024/analyze-my-youtube#readme"
+}

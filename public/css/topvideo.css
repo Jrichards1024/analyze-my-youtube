@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(107, 38, 171);
+    border-color:rgb(64, 227, 69) ;
+}
+@font-face {
+    font-family: 'Stora';
+    src: url(./Stora.otf);
+}
+h1{
+    font-size: 60px;
+    color:rgb(248, 214, 241);
+    font-family:Stora;
+}
+h3{
+    font-size: 50px;
+    color:rgb(248, 214, 241);
+    font-family:Stora;
+}
+
+#cssBtn{
+    margin-top: 7rem;
+    background-color: white;
+    color: black;
+    font-family:Stora;
+    border-color: rgb(108, 255, 108);
+    border-width: thick;
+    height: 100px;
+    font-size:30px;
+    border-radius: 30px;
+}
+#cssBtn:hover{
+    border-color: rgb(255, 151, 234);
+}
+a:hover{
+    text-decoration: none;
+}
