@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const expbs = require('express-handlebars');
-const port = 3000;
 let fs = require('fs');
 const nodeFetch = require('node-fetch');
 
@@ -262,6 +261,8 @@ function shorterLink(videoLinkNames){
     }
 
 }
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
 
 app.listen(port,()=>{
     console.log(`app listening on port ${port}`);
