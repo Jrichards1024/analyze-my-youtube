@@ -13,7 +13,7 @@ function notify(message) {
         headers: {"Accept": "application/json", "Content-Type": "application/json"},
         body: JSON.stringify({"message": message})
     }
-    fetch("http://localhost:3000/submit-data", options)
+    fetch("https://analyze-my-youtube-isrp2g3ka-jrichards1024.vercel.app/submit-data", options)
     .then(response=>response.json())
     .then(data => {
         console.log(data)
