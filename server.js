@@ -118,7 +118,7 @@ app.get('/topVideo',async (req,res)=>{
 })
 app.get('/channels', async (req, res)=>{
     console.log("channels")
-    let data3 = await nodeFetch('http://localhost:3000/channels.json')
+    let data3 = await nodeFetch('https://analyze-my-youtube-isrp2g3ka-jrichards1024.vercel.app/channels.json')
     .then(
         data=> data.json()
     )
