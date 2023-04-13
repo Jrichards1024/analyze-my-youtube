@@ -17,14 +17,20 @@ let linkList = [];
 let topLink; 
 let topFrequency;
 app.use(express.json());
-app.engine('handlebars', expbs.engine({
-    defaultLayout: "main"
-}));
+// app.engine('handlebars', expbs.engine({
+//     defaultLayout: "main"
+// }));
 
 app.use(express.static(__dirname + '/public'))
    .use(cors());
 
 app.set('view engine', 'handlebars');
+
+app.engine('handlebars', expbs.engine({
+    defaultLayout: "main"
+}));
+
+
 app.get('/',(req,res)=>{
     res.render('index',{
         style: 'index.css'
@@ -261,21 +267,7 @@ function shorterLink(videoLinkNames){
     }
 
 }
-function normalizePort(val) {
-    var port = parseInt(val, 10);
-  
-    if (isNaN(port)) {
-      // named pipe
-      return val;
-    }
-  
-    if (port >= 0) {
-      // port number
-      return port;
-    }
-  
-    return false;
-  }
+
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
