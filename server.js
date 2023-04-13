@@ -53,7 +53,7 @@ app.get('/loading',(req,res)=>{
 app.get('/videos',async(req,res)=>{
     // await feauxDB();
     // videoOrgo();
-    let data1 = await nodeFetch('http://localhost:3000/videos.json')
+    let data1 = await nodeFetch('https://analyze-my-youtube-isrp2g3ka-jrichards1024.vercel.app/videos.json')
     .then(
         data=> data.json()
     )
@@ -63,7 +63,7 @@ app.get('/videos',async(req,res)=>{
             console.log(j)
         }
     )
-    let data2 = await nodeFetch('http://localhost:3000/links.json')
+    let data2 = await nodeFetch('https://analyze-my-youtube-isrp2g3ka-jrichards1024.vercel.app/links.json')
     .then(
         data=> data.json()
     )
@@ -86,7 +86,7 @@ app.get('/videos',async(req,res)=>{
     });
 })
 app.get('/topVideo',async (req,res)=>{
-    let data1 = await nodeFetch('http://localhost:3000/videos.json')
+    let data1 = await nodeFetch('https://analyze-my-youtube-isrp2g3ka-jrichards1024.vercel.app/videos.json')
     .then(
         data=> data.json()
     )
@@ -96,7 +96,7 @@ app.get('/topVideo',async (req,res)=>{
             console.log(j)
         }
     )
-    let data2 = await nodeFetch('http://localhost:3000/links.json')
+    let data2 = await nodeFetch('https://analyze-my-youtube-isrp2g3ka-jrichards1024.vercel.app/links.json')
     .then(
         data=> data.json()
     )
