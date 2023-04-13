@@ -24,6 +24,7 @@ app.use(express.json());
 app.use(express.static(__dirname + '/public'))
    .use(cors());
 
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'handlebars');
 
 app.engine('handlebars', expbs.engine({
@@ -31,7 +32,7 @@ app.engine('handlebars', expbs.engine({
 }));
 
 
-app.get('/',(req,res,next)=>{
+app.get('/',(req,res)=>{
     res.render('index',{
         style: 'index.css'
     });
