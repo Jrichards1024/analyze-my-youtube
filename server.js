@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const expbs = require('express-handlebars');
+var path = require('path');
 let fs = require('fs');
 const nodeFetch = require('node-fetch');
 
